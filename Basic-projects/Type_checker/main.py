@@ -1,7 +1,7 @@
 # Check if <value> is <type>
 # Bool
 
-def type_check(x,y) -> bool:
+def type_check(x:str,y:str) -> bool:
     data = {
         "int": lambda x:int(x),
         "float": lambda x:float(x),
@@ -31,7 +31,7 @@ def type_check(x,y) -> bool:
             pass
         if x in ("True","False"):
             return False
-        return
+        return True
     
     try:
         data[y](x)
